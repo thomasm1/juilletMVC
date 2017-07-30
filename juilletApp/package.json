@@ -1,0 +1,24 @@
+{
+  "name": "juilletapp",
+  "version": "0.0.3",
+  "description": "app task collector for customer, Express Angular",
+  "main": "juilletapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thomas milton maestas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "juillet",
+    "app",
+    "express",
+    "architecture",
+    "mongo",
+    "tmm"
+  ]
+}

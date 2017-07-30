@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 app.use('/api', tasks);
-
+console.log('Express Firing')
 app.listen(port, function(){
 	console.log('TMServer started on port ' +port);
 });

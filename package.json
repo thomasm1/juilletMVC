@@ -1,11 +1,33 @@
 {
-  "name": "juilletmvc",
-  "version": "0.0.1",
+  "name": "juilletapp",
+  "version": "0.0.2",
   "description": "MVC using node.js, MEAN stack, index.html-Views ",
   "main": "js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Thomas Maestas",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasm1/juilletMVC.git"
+  },
+  "keywords": [
+    "juillet",
+    "express",
+    "angular",
+    "4",
+    "structure",
+    "nodejs",
+    "infr",
+    "mongoDB",
+    "on",
+    "other"
+  ],
+  "bugs": {
+    "url": "https://github.com/thomasm1/juilletMVC/issues"
+  },
+  "homepage": "https://github.com/thomasm1/juilletMVC#readme"
 }

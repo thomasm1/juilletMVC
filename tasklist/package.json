@@ -1,6 +1,6 @@
 {
   "name": "tasklist",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "tmMVC task manager",
   "main": "server.js",
   "scripts": {
