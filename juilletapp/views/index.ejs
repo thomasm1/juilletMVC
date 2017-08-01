@@ -1,6 +1,14 @@
 <% include partials/header %> 
-        <br><H3><%= title %></H3> 
-    <br><h2>Add Customer</h2>
+<h2>Add Contact Information</h2>
+       
+     
+    <% if(errors != undefined){ %>
+        <ul>
+          <% errors.forEach(function(error){ %>
+        <li><%= error.msg %></li>
+      <%  }) %> 
+      </ul>
+     <%  } %> 
     <form method="POST" action="/users/add">
             <label>First Name</label><br>
             <input type = "text" name="fname"><br>
@@ -10,6 +18,7 @@
             <input type = "text" name="email"><br><br>
             <input type = "submit" value="Submit">
     </form>
+           <br><H3><%= title %></H3> 
         <ul>
         <% users.forEach(function(user){ %>
         <li><%= user.fname %> <%= user.lname %></li>

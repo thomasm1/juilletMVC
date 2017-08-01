@@ -9,7 +9,9 @@
   "author": "Thomas Maestas",
   "license": "ISC",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mongojs": "^2.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thomasm1/juilletMVC.git"
