@@ -15,6 +15,7 @@
     "express-validator": "^3.2.1"
   },
   "devDependencies": {
+    "@angular/cli": "^1.2.6",
     "mongodb": "^2.2.30",
     "nodemon": "^1.11.0"
   },
