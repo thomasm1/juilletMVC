@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve", // compiles Typescript
-    "build": "ng build", // builds tostatic server uploads4 use 
+    "start": "ng serve",  
+    "build": "ng build",  
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -15,14 +15,14 @@
     "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0", // important
+    "@angular/core": "^4.0.0",  
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0", // bootstrap
+    "@angular/platform-browser": "^4.0.0", 
     "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0", // router (big angular3 fix, this is the crown
+    "@angular/router": "^4.0.0", 
     "core-js": "^2.4.1",
-    "rxjs": "^5.4.1", // react extensions, observables
+    "rxjs": "^5.4.1",  
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
