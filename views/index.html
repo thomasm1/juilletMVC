@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    
+
+ <meta name="description" content="data analysis and visualization, sociology and criminology statistical tests">
+
+ <meta name="keywords" content="data analysis and visualization, sociology and criminology statistical tests">
+
+ <meta name="author" content="Thomas M Maestas">  
+
+ <title>Juillet TaskList</title>
+<script type="text/javascript" src="https://github.com/d3js.git"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<script src="../node_modules/core-js/client/shim.min.js"></script> 
+<script src="../node_modules/zone.js/dist/zone.js"></script> 
+<script src="../node_modules/reflect-metadata/Reflect.js"></script> 
+<script src="../node_modules/systemjs/dist/system.src.js"></script>  
+ 
+
+<script src="systemjs.config.js"></script>
+
+<script>
+
+    System.import('app').catch(function(err){ console.error(err); });
+
+</script> 
+
+-->
+
+
+
+
+
+  </head>
+
+<body>
+
+    <h2>
+
+     Juillet Express App by TM </h2>
+
+        <div class="map2"></div>
+
+ <script>
+
+  (function() {
+
+    var margin = { top: 50, left: 50, bottom: 50}, 
+
+    height = 400 - margin.top - margin.bottom, 
+
+    width = 800 - margin.left - margin.right;
+
+    var svg = d3.select(".map2")
+
+    .append("svg")
+
+    .attr("height", height + margin.top + margin.bottom)
+
+    .attr("width", width + margin.left + margin.right)
+
+    .append("g")
+
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+    /* readin in world.topojson
+
+    reasd in capitals.csv
+
+    */
+
+    d3.queue()
+
+      .defer(d3.json, "../../../data/world_countries.json")
+
+      .await(ready)
+
+
+
+    /*
+
+    Create a new projection using Mercator (geoMercator)
+
+    and center it (translate)
+
+    and zoom in a certain amount (scale)
+
+    */
+
+    var projection = d3.geoMercator()
+
+    .translate([width / 2, height / 2 ])
+
+    /* create a path (geoPath)
+
+    using the projection 
+
+    */
+
+    var path = d3.geoPath() 
+
+        .projection(projection)
+
+
+
+  function ready (error, data) {
+
+    console.log(data)
+
+var countries = topojson.feature(data, data.objects.countries).features
+
+console.log(countries)
+
+/* adding path for each country shapes to opath */
+
+
+
+
+
+svg.selectAll(".country")
+
+.data(countries)
+
+.enter().append("path")
+
+.attr("class", "country")
+
+
+
+    }
+
+       
+
+  })();
+
+ </script>
+
+  <!-- 3. Display the application -->
+
+ 
+
+   <!-- 3. Display the application <my-app>Loading...</my-app>   -->  
+
+</body>
+
+</html>
