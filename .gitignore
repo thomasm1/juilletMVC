@@ -1,2 +1,13 @@
+data
+img
+img- 
+img/*
+data/*
+src/data/*
+dist/*/*
+dist/*
+
 node_modules
 bower_components
+_For_Cat_Eyes_Only_/*
+node_modules

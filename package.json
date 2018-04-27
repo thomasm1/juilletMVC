@@ -1,16 +1,51 @@
 {
   "name": "juilletapp",
-  "version": "0.0.2",
+  "version": "0.2.1",
   "description": "MVC using node.js, MEAN stack, index.html-Views ",
   "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/"
   },
   "author": "Thomas Maestas",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "d3": "^4.13.0",
+    "font-awesome": "^4.7.0",
+    "jshint-loader": "^0.8.4",
+    "popper.js": "^1.11.1",
+    "webpack": "^3.8.1",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^2.9.4"
+  },
   "devDependencies": {
-    "mongojs": "^2.4.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "bundle-loader": "^0.5.0",
+    "chartjs": "^0.3.24",
+    "css-loader": "^0.28.10",
+    "file-loader": "^0.7.2",
+    "d3": "^4.13.0",
+    "json-loader": "^0.5.7",
+    "just.randomcolor": "^0.1.1",
+    "griddle-react": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "mongojs": "^2.4.0",
+    "react": "^0.13.3",
+    "react-dom": "^15.1.0",
+    "react-router": "^0.13.6",
+    "style-loader": "^0.20.3",
+    "url-loader": "^0.5.5"
   },
   "repository": {
     "type": "git",
@@ -23,7 +58,6 @@
     "4",
     "structure",
     "nodejs",
-    "infr",
     "mongoDB",
     "on",
     "other"
@@ -31,5 +65,5 @@
   "bugs": {
     "url": "https://github.com/thomasm1/juilletMVC/issues"
   },
-  "homepage": "https://github.com/thomasm1/juilletMVC#readme"
+  "homepage": "https://github.com/thomasm1/juilletMVC"
 }
